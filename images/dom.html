@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="inp1" value="10" />
+    <input type="number" id="inp2" value="20" />
+    <button onclick="addNumbers()">Add Number</button>
+    <h1>Sum = <span id="out">0</span></h1>
+  </body>
+
+  <script>
+    let input1 = document.getElementById("inp1");
+    let input2 = document.getElementById("inp2");
+    let outElement = document.getElementById("out");
+
+    function addNumbers() {
+      outElement.innerHTML = input1.value;
+    }
+
+    //     let allheadings = document.getElementsByTagName("h1");
+    //     let heading = allheadings[0];
+    //    heading.innerHTML = "<i style='color:red;'> Chnge by js </i>";
+
+    // let heading = document.getElementById("myid");
+    // heading.innerHTML = "Change something";
+    // heading.setAttribute("class", "givejs");
+
+    // let colors = ["red", "green", "blue", "yellow"];
+    // let i = 0;
+    // function doSomething() {
+    //   if (i == 4) {
+    //     i = 0;
+    //   }
+    //   let heading = document.getElementById("myid");
+    //   heading.setAttribute("style", `color:${colors[i]}`);
+
+    //   i++;
+    // }
+  </script>
+</html>
