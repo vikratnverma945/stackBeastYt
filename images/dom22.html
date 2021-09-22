@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    select {
+      min-width: 120px;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <h4>Where do you live</h4>
+    <select onchange="setCity(this.value)">
+      <option value="-1">Select City</option>
+      <option value="Shimla">Shimla</option>
+      <option value="Hyderbad">Hyderbad</option>
+      <option value="Banglore">Banglore</option>
+    </select>
+
+    <h2>
+      You Live In :<span><i> Select your City first </i></span>
+    </h2>
+  </body>
+
+  <script>
+    function setCity(value) {
+      if (value == "-1") {
+        alert("You should select city");
+        document.getElementsByTagName("option")[0].remove();
+        return;
+      }
+      document.getElementsByTagName("i")[0].innerHTML = value;
+    }
+  </script>
+</html>
